@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- Poner siempre para que lea las tildes -->
+</head>
+
+<body background="imagenes/fotoweb2.jfif"> <!-- El atributo "background" sirve para establecer el fondo de nuestra pagina web-->
+
+<table border="0" width="100%" height="5%">
+	<tr align="right" width="100%">
+		<td colspan="3"> 
+			<div id="logotipo">
+				<a href="WEB MOTOS(Pagina Principal).html">
+				<img src="imagenes/Foto_logotipo.png" width="100" height="50" alt="Haz clic aqui para volver a la pagina de inicio">
+			</div>	
+		</td>
+
+	</tr>
+
+</table>
+
+<table border="0" width="100%" height="100%"> <!-- Para poder introducir un formulario de forma que aparezca visualmente en medio de la pantalla, he empleado 2 tablas. La primera tabla es a la que le meteremos otra tabla con el contenido del formulario, y esta primera tabla nos sirve para posicionar como queramos dicho formulario.--> 
+<tr align="center"> <!-- Este atributo hará que nuestro contenenido quede centrado en nuestra pantalla.--> 
+<td>
+<form ID="Name" action="FormularioExitoso.html"> <!-- La funcion del atributo "action" es llevarnos a otra pagina, en la cual he añadido un texto para que el cliente sepa que ha realizado correctamente el formulario.--> 
+
+
+<table border="0" >
+	
+	<tr>
+		<td style="color:white">
+			<label for="nombre"> Nombre </label> <td> <input ID="nombre" name="nombre" type="text"/> </td> <!-- Cada formulario debe tener su "id" para poder identificarlo, un nombre y un tipo, en este caso el tipo es "texto, abajo veremos que otro tipos de formularios podremos hacer, dependiendo de nuestra necesidades.--> 
+		</td>	
+	</tr>
+	
+	<tr>  
+		<td style="color:white"> 
+			<label for="nombre"> Primer Apellido </label> <td>	<input ID="Apellido" name="apellido" type="text"/> </td>
+		</td>
+	</tr>
+		
+	<tr>
+		<td style="color:white">
+			<label for="nombre"> Segundo Apellido </label> <td> <input ID="Telefono" name="Telefono" type="tel" /> </td>
+		</td>
+	</tr>
+				
+	<tr>
+		<td style="color:white">
+			<label for="date"> Fecha nacimiento </label> <td> <input ID="fecha" name="fecha" type="date" /> </td> <!-- Aqui para que el formulario establezca la opcion de poder elegir la fecha de nacimieto en un calendario, tendremos que poner el tipo de formulario que queremos, que en este caso en tipo fecha y así podremos elegir el dia mes y año que queramos.--> 
+		</td>
+	</tr>	
+				
+	<tr>
+		<td style="color:white">
+			<label for="email"> Email </label> <td> <input ID="enail" name="email" type="email" /> </td>
+		</td>
+	</tr>
+	
+	<tr>
+		<td style="color:white">
+			<label for="nombre"> Sexo </label>  
+				<td style="color:white">
+					<label for="checkbox"> Hombre </label> <input ID="sexo" name="sexo" type="checkbox" /> <label for="checkbox"> Mujer </label> <input ID="enail" name="email" type="checkbox" /> <!-- Aquí añadimos dos etiquetas "label" ya que queremos elegir entre dos opciones, y nuestro tipo de formulario será "checkbox" que sirve para marcar la casilla correcta. -->            
+				</td>
+		</td>
+	</tr>
+
+	<tr>
+		<td style="color:white">
+			<label for="tel"> Teléfono </label> <td> <input ID="telefono" name="telefono" type="tel" maxlength="9"/>  </td> <!-- El atributo "maxlenght" nos sirve para determinar un máximo de caractéres que querramos escribir, una vez sobrepasemos esos caractéres establecidos no nos dejará escribir mas.--> 
+		</td>
+	</tr>
+
+	<tr>
+		<td style="color:white">
+			<label for="checkbox"> Acepta las condiciones </label> 
+				<td style="color:white">
+					<label for="checkbox"> SI </label> <input ID="condiciones" name="condiciones" type="checkbox" /> <label for="checkbox"> NO </label> <input ID="condiciones" name="condiciones" type="checkbox" />
+				</td>
+		</td>
+	</tr>
+	
+	<tr>
+		<td style="color:white">
+			<label for="nombre"> Asunto: </label> <td> <input ID="Asunto" name="Asunto" type="text"/> </td>
+		</td>	
+	</tr>
+
+	<tr>
+		<td colspan="2" align="right"> <input ID="Enviar" name="Enviar" type="submit"/> </td> <!-- El atributo "submit" nos hace enviar el formulario una vez terminado. Como he dicho antes he creado otra pagina, la cual nos diga que el formulario ha sido enviado correctamente.-->  
+	</tr>
+
+		
+
+</table>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>

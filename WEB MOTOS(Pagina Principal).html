@@ -1,0 +1,100 @@
+<script>
+	var userAgent = window.navigator.userAgent;
+	if (userAgent.indexOf("Chrome") > -1) {
+		alert("Chrome");
+	} else if ("Firefox") {
+		alert("Firefox");
+	}
+</script>
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- Poner siempre para que lea las tildes -->
+	
+</head>
+
+<body background="imagenes/fotofondoweb.jpg"> <!-- El "background" lo utilizamos para asignarle un fondo a nuestra pagina web, el cual puede ser una imagen o un color establecido. -->
+
+
+<table border="0" width="100%" height="10%"> <!-- La pagina principal de la web la vamos a dividir en 3, un menu arriba, el cual se moverá por toda la pagina web, en segundo lugar se pone otra tabla para poner en el centro un enlace que te dirá mas informacion acerca del "Nuevo Modelo" (en caso de nuestra pagina web) y por último otra tabla para poder poner poner un pie de pagina para las redes soociales. -->
+
+	<tr align="center" style="color:white;">
+			
+			<td> <a href="Modelos.html" style="text-decoration:none; color:white">  MODELOS  </a></td> <!-- El atributo "text-decoration:none" se utiliza para quitarle a la palabra asignada, 
+			en este caso a "Modelos" el color azul y el subrayado que se viene establecido al querer poner un link. Suele usarse de forma estética. -->
+			
+			
+			<td> <a href="RECAMBIOS.html" style="text-decoration:none; color:white" >  RECAMBIOS  </a></td>
+			<!-- El atributo color:white" lo usaremos para cambiar el color de la palabra, en este caso: "Recambios".  -->
+		
+			<td> <a href="INICIAR SESION.html" style="text-decoration:none; color:white" > INCIAR SESION  </a></td>
+			
+			
+			<td> <a href="Contactar.html" style="text-decoration:none; color:white" > Contactar   </a></td>
+			
+			<!-- Aqui iria la pagina servicicios-->
+			
+			<td> <a href="REGISTRATE.html" style="text-decoration:none; color:white" > REGISTRATE  </a></td>
+			
+			
+			
+			<td> 
+			<div id="logotipo"> <!-- El fin de utilizar las capas es para crear un logo en la esquina superior derecha, el cual te redirige a la pagina principal. -->
+				<a href="WEB MOTOS(Pagina Principal).html"> <!-- ¿Como hacer para redigirte a la àgina principal?: Para ello utilizaremos una etiqueta "href" y pondremos dentro de esta etiqueta nuestro archivo (.html) al que queramos que se redirija. -->
+				<img src="imagenes/Foto_logotipo.png" width="100" height="50" alt="Haz clic aqui para volver a la pagina de inicio"> <!-- Y esta etiqueta seria para asignarle una imagen, en nuestro caso seria para el logo de "Ktm". -->
+			</div>	
+			</td>
+
+
+	</tr> <!-- ¡¡ SIEMPRE CERRANDO LAS ETIQUETAS!! -->
+	
+	
+</table>
+
+<table border="0" width="100%" height="80%">
+
+	<tr  align="right" valign="top"> <!-- Aqui he puesto la palabra en el centro de la pantalla y de color blanco-->
+		<td>
+			<table border="0" height="20%">
+			
+				<tr style="color:white">
+					<td align="center" style="font-size:30"> NEW MODEL MOTOCROSS SX </td>
+				</tr>
+				
+				<tr style="background-color: orange;" > <!-- Aqui se utiliza el "style" para relenar la celda de color naranja como aparece en la pagina web. Sirve para que el cliente se de cuenta que pinchando, puede ver mas contenido.-->
+				
+					<td align="center" > <a href="MAS_INFORMACION.html" style="text-decoration:none; color:white; font-size:20" target="_self"> <b>MAS INFORMACION </b> </td> <!-- El atributo "font-size:20" sirve para darle tamaño a una palabra, en este caso es para destacar dicha palabra. -->
+				</tr>
+		
+			</table>
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<table border="0" width="100%" height="10%">  <!-- Por último creamos otra tabla para poner un pie de pagina donde se va a encontar los enlaces para ver las redes sociales. -->
+
+
+	<td> 
+		<div id="logotipo">
+			<a href="https://www.instagram.com/ktm_spain/?next=%2F"> <!-- Se pone el enlace al cual quieres que te lleve una vez clicado en imagen del logo. -->
+			<img src="imagenes/Logo_instagram.png" width="40" height="40" >
+			
+			<a href="https://twitter.com/KTM_Racing?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+			<img src="imagenes/Logo_twitter.png" width="40" height="40" >
+			
+			<a href="https://www.youtube.com/channel/UCb3-KtEqkRuJeT2ekC5Mzow">
+			<img src="imagenes/Logo_youtube.png" width="40" height="40" >
+
+			<a href="https://es-es.facebook.com/pages/category/Product-Service/KTM-SPAIN-85871885813/">
+			<img src="imagenes/Logo_facebook.png" width="40" height="40" >				
+		</div>
+	</td>
+
+
+
+</table>
+
+</body>
+</html>
